@@ -30,3 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="meizu_16Xs_CN-user 9 PKQ1.190302.001 1573695900 release-keys"
 
 BUILD_FINGERPRINT := meizu/meizu_16Xs_CN/meizu16Xs:9/PKQ1.190302.001/1573695900:user/release-keys
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.lcd_density=400
