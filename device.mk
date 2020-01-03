@@ -15,6 +15,14 @@ DEVICE_PACKAGE_OVERLAYS += \
 TARGET_SCREEN_HEIGHT := 2232
 TARGET_SCREEN_WIDTH := 1080
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/mokee/config/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    mokee.biometrics.fingerprint.inscreen@1.0-service.m1926
+
 # Init
 PRODUCT_PACKAGES += \
     init.target.rc
