@@ -43,10 +43,6 @@ TARGET_USES_UEFI := true
 
 BOARD_AVB_ENABLE := true
 
-# Crypto
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 firmware_class.path=/vendor/firmware_mnt/image earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket
@@ -88,7 +84,6 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_NTFS_3G := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_THEME := portrait_hdpi
