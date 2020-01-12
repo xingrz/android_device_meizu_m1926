@@ -10,7 +10,11 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "mokee.biometrics.fingerprint.inscreen@1.0-service.m1926",
     init_rc: ["mokee.biometrics.fingerprint.inscreen@1.0-service.m1926.rc"],
-    srcs: ["service.cpp", "FingerprintInscreen.cpp"],
+    srcs: [
+        "KeyEventWatcher.cpp",
+        "FingerprintInscreen.cpp",
+        "service.cpp",
+    ],
     shared_libs: [
         "libbase",
         "libhardware",
