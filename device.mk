@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl.m1926
+
 # Touch
 PRODUCT_PACKAGES += \
     mokee.touch@1.0-service.m1926
